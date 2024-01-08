@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Register Here</h2>
+        </div>
+        <form action="submitted.html" method="post" class="form" id="form">
+            <div class="field">
+                <label >Full Name</label>
+                <input type="text" placeholder="xyz" id="uname" required>
+            </div>
+            <div class="field ">
+                <label>Email ID</label>
+                <input type="email" placeholder="abc@gmail.com" id="email" required>
+            </div>
+            <div class="field">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="91xxxxxxxxx" required>                
+            </div>
+            <div class="field">
+                <label>Password</label>
+                <input type="password" placeholder="password" id="password" required>                
+            </div>
+            <div class="field">
+                <label>Confirm Password</label>
+                <input type="password" placeholder="password" id="cpassword" required>                
+            </div>
+            <div class="field">
+                <input type="checkbox" id="tc" class="terms" required>
+                <label>I agree to terms and conditions</label>                               
+            </div>
+            <input style="cursor: pointer;" type="submit" id = "submit" class="button">
+        </form>
+    </div>
+    <script src = "validation.js"></script>
+</body>
+</html>
